@@ -1,0 +1,86 @@
+/* 1. Directivas base de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Reset y Configuración Global */
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Animaciones de Scroll (Reveal) con Will-Change para performance */
+.reveal-box {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-box.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 5. Custom Scrollbar Industrial */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F2F2F2;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #121416;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374151;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8E9499;
+}
+
+/* 6. Fix para evitar el parpadeo del menú móvil al cargar */
+.not-ready {
+    display: none !important;
+}
+
+.filter-btn-new {
+    @apply text-[11px] uppercase tracking-[0.5em] font-medium transition-all duration-300 py-2;
+}
+
+.btn-line {
+    @apply absolute -bottom-1 left-0 w-0 h-[1px] bg-d-crimson transition-all duration-500;
+}
+
+.filter-btn-new.active .btn-line,
+.filter-btn-new:hover .btn-line {
+    @apply w-full;
+}
+
+.filter-btn-new.active {
+    @apply text-d-crimson font-bold;
+}
+
+/* Efecto de Cursor para los productos */
+.product-item:hover {
+    cursor: none; /* Podríamos implementar un custom cursor que diga "VER" */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

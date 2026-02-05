@@ -1,0 +1,18 @@
+{
+    "title": "Let's make it",
+    "subtitle": "magical",
+    "tag_label": "Contact",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_type": "How can we help?",
+    "form_desc": "Tell us about that special moment...",
+    "form_send": "Send message",
+    "success": "Message ready!",
+    "error_name": "Tell us your name",
+    "error_email": "Invalid email",
+    "types": ["Balloons", "Gifts", "Kits", "Event"],
+    "sending": "Sending...",
+    "chat_client": "Client",
+    "chat_project": "Project",
+    "chat_details": "Details"
+  }

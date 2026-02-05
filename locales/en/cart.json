@@ -1,0 +1,8 @@
+{
+      "title": "Your Selection",
+      "close": "Close",
+      "empty": "Your bag is empty.",
+      "checkout": "Send to WhatsApp",
+      "wa_intro": "Hi! I would like to place this order:",
+    "wa_total": "Estimated total"
+}

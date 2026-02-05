@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILEMX | Amorcito Corazón</title>
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // Montserrat es la fuente geométrica estándar de Canva
+                        sans: ['Montserrat', 'sans-serif'],
+                        // Playfair Display da el toque "Premium/Evento"
+                        title: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'd-dark': '#0A0A0B',
+                        'd-surface': '#161618',
+                        'd-crimson': '#991B1B', 
+                        'd-rose': '#E2A58D',
+                        'd-muted': '#71717a',
+                        'd-silver': '#D4D4D8',
+                        'd-champagne': '#FAF6F3',
+                    },
+                    letterSpacing: {
+                        'architect': '.5em',
+                        'tightest': '-.06em', // Más ajustado para la fuente Serif
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-d-champagne dark:bg-d-dark text-d-dark dark:text-d-silver transition-colors duration-700 antialiased selection:bg-d-crimson selection:text-white">
+    <div id="app"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

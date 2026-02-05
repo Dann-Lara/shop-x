@@ -1,0 +1,18 @@
+{
+  "title": "Hagamos algo",
+  "subtitle": "mágico",
+  "tag_label": "Contacto",
+  "form_name": "Tu nombre",
+  "form_email": "Tu correo electrónico",
+  "form_type": "¿En qué podemos ayudarte?",
+  "form_desc": "Cuéntanos sobre ese momento especial...",
+  "form_send": "Enviar mensaje",
+  "success": "¡Mensaje listo!",
+  "error_name": "Dinos cómo te llamas",
+  "error_email": "Correo no válido",
+  "types": ["Globos", "Regalos", "Kits", "Evento"],
+  "sending": "Enviando...",
+  "chat_client": "Cliente",
+  "chat_project": "Producto",
+  "chat_details": "Detalles"
+}
