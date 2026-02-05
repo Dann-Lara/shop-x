@@ -153,16 +153,30 @@ export function initProducts() {
 
     // Delegación de Eventos
     document.addEventListener('click', (e) => {
-        // 1. Evitar interferencia con botón de compra rápida
         const addBtn = e.target.closest('[data-add-cart]');
-        if (addBtn) return;
-
+        if (addBtn) {
+            // Si el botón está dentro del modal, cerramos el modal después de añadir
+            const isInModal = e.target.closest('#detail-content');
+            if (isInModal) {
+                // Un pequeño delay opcional de 100ms para que el usuario sienta el click
+                setTimeout(() => {
+                    toggleDetail(false);
+                }, 100);
+            }
+            return; // Permitimos que cart.js también escuche este evento para añadir el producto
+        }
+    
         // 2. Abrir detalle
         const openBtn = e.target.closest('.open-detail');
-        if (openBtn) toggleDetail(true, openBtn.closest('.product-item').dataset.id);
-
-        // 3. Cerrar detalle
-        if (e.target.closest('#close-detail') || e.target.id === 'detail-overlay') toggleDetail(false);
+        if (openBtn) {
+            const id = openBtn.closest('.product-item').dataset.id;
+            toggleDetail(true, id);
+        }
+    
+        // 3. Cerrar detalle (botón X o overlay)
+        if (e.target.closest('#close-detail') || e.target.id === 'detail-overlay') {
+            toggleDetail(false);
+        }
 
         // 4. Lógica de Filtros (Dinamismo y Visuales)
         const filterBtn = e.target.closest('.filter-btn-new');
