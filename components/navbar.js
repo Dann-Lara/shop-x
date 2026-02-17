@@ -4,7 +4,7 @@ import { ENV } from '../config/env.js';
 // --- Sub-componentes ---
 const Logo = () => `
     <a href="#/" class="font-title text-2xl tracking-tighter uppercase text-zinc-900 dark:text-white relative z-[120] italic">
-        DETAILE<span class="text-d-crimson font-bold not-italic">MX</span>
+        SHOP<span class="text-d-crimson font-bold not-italic">X</span>
     </a>
 `;
 
