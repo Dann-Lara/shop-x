@@ -1,4 +1,5 @@
 import { getWhatsAppLink } from '../utils/linkHelpers.js';
+import { ENV } from '../config/env.js';
 import { t } from '../utils/i18n.js';
 
 // --- 1. COMPONENTE UI (Template) ---
@@ -20,7 +21,7 @@ export function Contact() {
                     
                     <div class="space-y-8 font-sans text-[11px] tracking-[0.2em] uppercase opacity-80 dark:text-gray-400 border-l-2 border-d-crimson/20 pl-8">
                         <div class="flex flex-col gap-1">
-                            <span class="text-d-crimson font-bold italic lowercase tracking-normal text-lg">hola@detaiemx.com</span>
+                            <span class="text-d-crimson font-bold italic lowercase tracking-normal text-lg">${ENV.EMAIL_CONTACT}</span>
                         </div>
                     </div>
                 </div>
@@ -136,7 +137,7 @@ const processWhatsAppOrder = (form, btn) => {
 
     // --- TODO DESDE LOCALES ---
     const message = [
-        `DETAILEMX`,
+        `Shopx`,
         `${t('contact.chat_client')}: ${name}`,
         `${t('contact.chat_project')}: ${type}`,
         `${t('contact.chat_details')}: ${desc}`
