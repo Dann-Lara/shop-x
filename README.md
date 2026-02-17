@@ -1,4 +1,4 @@
-# DETAILEMX | Amorcito Corazón
+# Shop x
 
 > Gift & detail e-commerce site (balloons, flowers, arrangements). Bilingual (EN/ES), cart with WhatsApp checkout, dark/light theme. No build step.
 
@@ -8,7 +8,7 @@
 
 ### About
 
-**DETAILEMX** (“Amorcito Corazón”) is a single-page site for a gift/detail business. It showcases categories (e.g. balloons, garden, bouquets), product catalog, inspiration, contact, and a **cart** that sends the order via **WhatsApp**.
+**shopx** (“Amorcito Corazón”) is a single-page site for a gift/detail business. It showcases categories (e.g. balloons, garden, bouquets), product catalog, inspiration, contact, and a **cart** that sends the order via **WhatsApp**.
 
 ### Features
 
@@ -28,7 +28,7 @@
 ### Project structure
 
 ```
-detailemx/
+shopx/
 ├── index.html
 ├── main.js                 # Bootstrap, hash routing, render
 ├── style.css
@@ -79,7 +79,7 @@ MIT — see [LICENSE](LICENSE). Changelog: [CHANGELOG.md](CHANGELOG.md).
 
 ### Acerca de
 
-**DETAILEMX** (“Amorcito Corazón”) es un sitio de una página para un negocio de regalos y detalles. Muestra categorías (globos, jardín, ramos, etc.), catálogo de productos, inspiración, contacto y un **carrito** que envía el pedido por **WhatsApp**.
+**shopx** (“Amorcito Corazón”) es un sitio de una página para un negocio de regalos y detalles. Muestra categorías (globos, jardín, ramos, etc.), catálogo de productos, inspiración, contacto y un **carrito** que envía el pedido por **WhatsApp**.
 
 ### Características
 
@@ -99,7 +99,7 @@ MIT — see [LICENSE](LICENSE). Changelog: [CHANGELOG.md](CHANGELOG.md).
 ### Estructura del proyecto
 
 ```
-detailemx/
+shopx/
 ├── index.html
 ├── main.js                 # Arranque, rutas por hash, render
 ├── style.css
