@@ -6,7 +6,7 @@ import { t } from '../utils/i18n.js';
 const BrandSection = () => `
     <div class="col-span-1">
         <h3 class="text-3xl font-title tracking-tighter mb-8 text-zinc-900 dark:text-white italic">
-            DETAILE<span class="text-d-crimson font-bold not-italic">MX</span>
+            SHOP<span class="text-d-crimson font-bold not-italic">X</span>
         </h3>
         <p class="text-sm font-sans font-light text-zinc-500 dark:text-zinc-400 leading-relaxed italic pr-4">
             ${t('footer.description')}
@@ -77,7 +77,7 @@ export function Footer() {
 
             <div class="pt-12 border-t border-zinc-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
                 <div class="text-[9px] text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.3em]">
-                    &copy; ${new Date().getFullYear()} DETAILEMX. ${t('footer.rights')}
+                    &copy; ${new Date().getFullYear()} SHOPX. ${t('footer.rights')}
                 </div>
 
                 <div class="flex items-center gap-8">
